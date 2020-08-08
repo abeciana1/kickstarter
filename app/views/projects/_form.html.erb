@@ -1,0 +1,16 @@
+<%= form_for @project do |f| %>
+
+    <label>Project name: </label><br>
+    <%= f.text_field :name %>
+<br>
+<br>
+    <label>Project description: </label><br>
+    <%= f.text_area :description %>
+<br>
+<br>
+    <label>Project Funding Goal: </label><br>
+    <%= f.number_field :goal %>
+<br>
+<br>
+    <%= f.submit %>
+<%end%>

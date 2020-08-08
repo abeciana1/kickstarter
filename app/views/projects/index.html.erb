@@ -1,0 +1,5 @@
+<h1>Projects Index Page</h1>
+
+<% @projects.each do |project| %>
+<p> <%= link_to "#{project.name} | #{project.goal}", project_path(project) %> </p>
+<%end%>

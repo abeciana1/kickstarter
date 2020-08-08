@@ -1,0 +1,17 @@
+<h1><%= @project.name %> </h1>
+
+<p>Created at: <%= @project.created_at %></p>
+<br>
+<br>
+<p>Description: <%= @project.description %></p>
+<br>
+<br>
+<p>Funding Goal: <%= @project.goal %></p>
+<br>
+<br>
+<br>
+<br>
+<p>Want to delete this project?</p>
+<br>
+<br>
+<%= button_to "Delete Project", project_path, method: :delete %>
